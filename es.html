@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenuto"></div>
+    <script>
+        let giochi=[];
+        function Videogioco(titolo,piattaforma,annouscita,prezzo){
+            this.titolo = titolo;
+            this.piattaforma = piattaforma;
+            this.annouscita = annouscita;
+            this.prezzo = prezzo;
+        }
+        const videogiochi=[
+            new Videogioco("fortnite","PC","2017",23),
+            new Videogioco("Minecraft","PC","2009",50),
+            new Videogioco("gtaSanAndreas","PC","2003",100),
+        ];
+        for(let i=0;i<videogiochi.length;i++){
+            giochi.push(videogiochi[i]);
+            
+        }
+        for(let i=0;i<giochi.length;i++){
+            console.log(giochi[i]);
+            
+        }
+
+
+
+
+
+
+
+        
+
+
+            
+
+
+        
+    </script>
+</body>
+</html>
